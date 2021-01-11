@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 
@@ -26,6 +27,9 @@ function getConfig(dirname, package) {
       new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
       new HtmlWebpackPlugin({
         template: 'index.html'
+      }),
+      new CopyWebpackPlugin({
+        patterns: ['./widget.html']
       }),
       new BundleAnalyzerPlugin({
         analyzerMode: 'static',
