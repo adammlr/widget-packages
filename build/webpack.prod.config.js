@@ -7,7 +7,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 function getConfig(dirname, package) {
   return {
     mode: 'production',
-    entry: './src/index.js',
+    entry: './src/widget.js',
     output: {
       path: path.resolve(dirname, 'dist'),
       filename: `ascendon-selfcare-${package}.js`,
