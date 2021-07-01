@@ -1,0 +1,1 @@
+This repo uses yarn packages to expose react components as javascript "widgets" and then has a separate package that consumes them directly in a website.
