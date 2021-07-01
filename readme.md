@@ -6,4 +6,4 @@ To run the website and load widgets use `yarn build` then run an http server in 
 
 Built with Webpack.
 
-Uses [Preact](https://preactjs.com/) in place of React, but that's not a requirement, just an experiment.
+Uses [Preact](https://preactjs.com/) in place of React, but that's not a requirement, just an experiment.  However it does serve the purpose of reducing the file size of the standalone widget javascript bundles.
